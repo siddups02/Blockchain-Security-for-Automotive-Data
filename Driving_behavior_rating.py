@@ -59,8 +59,8 @@ with open(sys.argv[1]) as json_file:
                     brakeRating = 10 - int((brake-1))
                 brakeSum += brakeRating
                 brakeCount += 1
-            #print("pedal: " + str(data['value']))
-            #f1.write("brake pedal: " + str(data['value']) + ", time: " + str(data['timestamp']) + "\n")
+            print("pedal: " + str(data['value']))
+            f1.write("brake pedal: " + str(data['value']) + ", time: " + str(data['timestamp']) + "\n")
         line = json_file.readline()
     
 overallSpeedingRating = speedingSum/speedingCount
